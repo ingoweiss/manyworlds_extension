@@ -1,0 +1,25 @@
+{
+  "name": "manyworlds",
+  "displayName": "manyworlds",
+  "description": "Manyworlds feature file syntax highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "manyworlds",
+      "aliases": ["Manyworlds", "manyworlds"],
+      "extensions": ["manyworlds"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "manyworlds",
+      "scopeName": "source.manyworlds",
+      "path": "./syntaxes/manyworlds.tmLanguage.json"
+    }]
+  }
+}
