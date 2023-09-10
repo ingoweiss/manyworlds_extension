@@ -7,6 +7,9 @@
     },
     {
       "include": "#strings"
+    },
+    {
+      "include": "#scenario_element"
     }
   ],
   "repository": {
@@ -28,7 +31,18 @@
           "match": "\\\\."
         }
       ]
-    }
+    },
+    "scenario_element": {
+      "captures": {
+        "1": {
+          "name": "keyword.language.gherkin.feature.scenario"
+        },
+        "2": {
+          "name": "string.language.gherkin.scenario.title.title"
+        }
+      },
+      "match": "^\\s*(Scenario:)([^#]*)(\\s+#.*)?$"
+  }
   },
   "scopeName": "source.manyworlds"
 }
