@@ -42,7 +42,7 @@
         }
       },
       "match": "^\\s*(Scenario:)([^#]*)(\\s+#.*)?$"
-  }
+    }
   },
   "scopeName": "source.manyworlds"
 }
