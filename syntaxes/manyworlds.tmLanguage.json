@@ -6,9 +6,6 @@
       "include": "#keywords"
     },
     {
-      "include": "#strings"
-    },
-    {
       "include": "#scenario_element"
     }
   ],
@@ -16,29 +13,18 @@
     "keywords": {
       "patterns": [
         {
-          "name": "keyword.control.manyworlds",
+          "name": "keyword.other.manyworlds",
           "match": "\\b(Given|When|Then|And|But)\\b"
-        }
-      ]
-    },
-    "strings": {
-      "name": "string.quoted.double.manyworlds",
-      "begin": "\"",
-      "end": "\"",
-      "patterns": [
-        {
-          "name": "constant.character.escape.manyworlds",
-          "match": "\\\\."
         }
       ]
     },
     "scenario_element": {
       "captures": {
         "1": {
-          "name": "keyword.language.gherkin.feature.scenario"
+          "name": "keyword.language.gherkin.scenario"
         },
         "2": {
-          "name": "string.language.gherkin.scenario.title.title"
+          "name": "string.language.gherkin.scenario.title"
         }
       },
       "match": "^\\s*(Scenario:)([^#]*)(\\s+#.*)?$"
