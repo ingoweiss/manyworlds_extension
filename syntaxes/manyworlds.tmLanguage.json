@@ -9,6 +9,9 @@
       "include": "#scenario_element"
     },
     {
+      "include": "#feature_element"
+    },
+    {
       "include": "#data_table"
     },
     {
@@ -33,7 +36,18 @@
           "name": "string.language.gherkin.scenario.title"
         }
       },
-      "match": "^\\s*(Scenario:)([^#]*)(\\s+#.*)?$"
+      "match": "^\\s*(Scenario:)([^#]+)"
+    },
+    "feature_element": {
+      "captures": {
+        "1": {
+          "name": "keyword.language.gherkin.feature"
+        },
+        "2": {
+          "name": "string.language.gherkin.feature.title"
+        }
+      },
+      "match": "^\\s*(Feature:)([^#]+)"
     },
     "data_table": {
       "patterns": [
