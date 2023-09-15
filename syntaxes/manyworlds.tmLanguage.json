@@ -7,6 +7,9 @@
     },
     {
       "include": "#scenario_element"
+    },
+    {
+      "include": "#data_table"
     }
   ],
   "repository": {
@@ -28,6 +31,14 @@
         }
       },
       "match": "^\\s*(Scenario:)([^#]*)(\\s+#.*)?$"
+    },
+    "data_table": {
+      "patterns": [
+        {
+          "name": "keyword.other.manyworlds",
+          "match": "\\|"
+        }
+      ]
     }
   },
   "scopeName": "source.manyworlds"
